@@ -1,0 +1,204 @@
+/* primeiras propriedades: Lembrando que o asterisco pega o site todo*/
+* {
+    /* define a área de margem nos quatro lados do elemento */
+    margin: 0;
+    /* distância entre o conteúdo de um elemento e suas bordas */
+    padding: 0;
+    /* para configurar uma ou mais das propriedades de contorno */
+    outline: 0;
+  }
+  
+  .header-menu{
+    display: flex;
+    position: fixed; /*Deixa o nosso header fixo*/
+    width: 10%; /*Largura*/
+    padding: 8px; /*Espaçamento dos 4 lados*/
+    padding-bottom: 16px; /*Espaçamento inferior*/
+    padding-top: 16px;/*Espaçamento superior*/
+    height: 50px; /*Altura*/
+    background-color: #fb1313; /*cor de fundo da nossa barra de navegação*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: flex-end; /*Colocando no lado direito da pagina*/
+    width: 100%; /*Largura*/
+  }
+
+  .principal{
+    height: 100vh; /*Altura*/
+    display: flex;
+    background-color: #cdcaca; /*Cor do fundo*/
+  }
+  
+  .header-menu nav {
+    display: flex; 
+    justify-content: flex-end; /*Colocando no lado direito da pagina*/
+    width: 100%; /*Largura*/
+  }
+  
+  .lista-menu{
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-evenly; /*Espaçamento entre eles seja igual*/
+    width: 50%; /*Largura*/
+    align-items: center; /*Posicionando no centro*/
+  }
+  
+  /*Pegando os itens com tag a de dentro da nossa lista*/
+  .lista-menu li>a {
+    color: #FFF; /*Cor do texto*/
+    font-size: 18px; /*Tamanho da fonte*/
+    text-decoration: inherit; /*tirando o sublinhado*/
+  }
+  
+  
+  /* O container é um componente do Bootstrap que garante que o seu layout vai ficar alinhado corretamente na página.
+  Ele pode definir as margens laterais da página, ou deixar sem margens e, também, posiciona o conteúdo no
+  centro do browser. O container é invisível. */
+  .container {
+    margin-right: auto; /*uma margem automática para todos os lados  */
+    margin-left: auto;
+    margin-top: 75px; /*Margem para cima*/
+    max-width: 960px; /*largura maxima*/
+    padding-right: 10px; /* Espaçamento direito*/
+    padding-left: 10px; /*Espaçamento esquerdo*/
+    width: 100%; /*largura*/
+  }
+  
+  .subcontainer-principal{
+    /*display, flex-direction e justify content são elementos do flexbox que em conjunto, alinham nossos itens*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .eu {
+    width: 10%;
+    padding: 5px;
+    margin: 50px 50px 50px 50px;
+    text-align: right;
+  }
+
+    .eu_texto {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 32px; /*Espaçamento entre as linhas*/
+    color: #c93b07;
+  }
+  
+  .nome {
+    font-size: 36px;
+    color: #4519e1;
+    font-weight: 700; /*espessura*/
+    height: 45px;
+  }
+  
+  .texto-sobre {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 32px; /*Espaçamento entre as linhas*/
+    text-align:center;
+  }
+
+  .upper {
+    text-transform: uppercase;
+}
+  
+  .btn {
+    background-color: var(--primary-color);
+    border-radius: 1px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1.4rem 4rem;
+    display: inline-block;
+    color: inherit
+}
+
+.hero_title {
+    color: #631ca0;
+    font-size: 150%;
+}
+
+
+  .article-lista{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 90px;
+    text-align: left;
+    line-height: 32px; /*Espaçamento entre as linhas*/
+  }
+  
+  .topico-principal {
+    font-size: 36px;
+    color: #ac0a6e;
+  }
+
+  .item{
+    padding: 32px;
+  }
+  
+  .lista-item{
+    margin-right: 5%;
+    margin-top: 2%;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.5rem;
+    position: relative;
+    flex-direction:row;
+    flex-wrap: wrap;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #f1f4f6;
+    border: 0 solid rgba(15,30,30,.120);
+    border-radius: 0.5rem;
+  
+  }
+  
+  .lista-item ul li {
+    margin-bottom: 32px;  /*espaçamento entre os items da nossa lista*/
+  }
+  
+  .lista-titulo{
+   margin-bottom: 5px; 
+   font-size: 22px;
+   color: #631ca0;
+   font-weight: 700;
+  }
+  
+  .lista-local{
+    font-size: 18px;
+    color: #2F80ED;
+    
+  }
+
+  .lista-descricao {
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 32px; /*Espaçamento entre as linhas*/
+    font-weight: 300;
+    text-align: justify;
+  }
+  
+  .rodape{
+    background-color: #080808;
+    height: 250px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .lista-rodape li{
+    color: #580f7a;
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items:center;
+    margin: 0px 25px 18px 100px;
+  }
+  
+  .estilo-icone{
+   font-size: 32px;
+   margin-right: 10px;
+   text-align:right;
+  }
